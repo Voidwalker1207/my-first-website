@@ -18,5 +18,5 @@ int main() {
   const char* env = std::getenv("PORT");
   unsigned short port = env ? static_cast<unsigned short>(std::stoi(env)) : 8080;
 
-  app.port(port).bindaddr("0.0.0.0")->run();
+  app.port(port).bindaddr("0.0.0.0").run();
 }
