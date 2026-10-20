@@ -4,14 +4,8 @@ project(cpp_web_app CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include(FetchContent)
-
-FetchContent_Declare(
-    crow
-    URL https://github.com/CrowCpp/Crow.git
-)
-
-FetchContent_MakeAvailable(crow)
+# use the local crow directory downloaded by Docker
+add_subdirectory(vendor/crow)
 
 add_executable(cpp_web_app main.cpp)
 target_link_libraries(cpp_web_app PRIVATE Crow::Crow)
