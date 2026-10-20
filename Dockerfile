@@ -13,7 +13,7 @@ COPY CMkeLists.txt main.cpp./
 
 FROM ubuntu:latest
 
-EXPOSE 8080
+EXPOSE 10000
 
 CMD ["/usr/local/bin/cpp_web_app"]
 
