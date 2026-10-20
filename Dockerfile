@@ -11,7 +11,7 @@ COPY CMkeLists.txt main.cpp./
  RUN cmake-S.-B build-DCMAKE-BUILD-TYPE=Release\
     && cmake--build build-j2
 
-FROM ubuntu:8080
+FROM ubuntu:latest
 
 EXPOSE 8080
 
