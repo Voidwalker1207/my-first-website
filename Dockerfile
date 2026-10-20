@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y\
 
   WORKDIR /app
 
-COPY CMakeLists.txt main.cpp./
+COPY . .
 
  RUN cmake -S . -B build -DCMAKE_BUILD_TYPE=Release\
     && cmake--build build-j2
