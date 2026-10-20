@@ -7,9 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include(FetchContent)
 
 FetchContent_Declare(
- crow
- GIT_REPOSITORY https://github.com/CrowCpp/Crow.git
- GIT_TAG v1.2.1
+    crow
+    URL https://github.com/CrowCpp/Crow.git
 )
 
 FetchContent_MakeAvailable(crow)
