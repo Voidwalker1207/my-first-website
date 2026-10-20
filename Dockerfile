@@ -1,8 +1,8 @@
 FROM ubuntu:24.04 AS build
 
-RUN apt-get update && apt-get install -y\
-  g++ cmake make git libasio-dev\
-  && rm-rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
+    g++ cmake make git libasio-dev \
+    && rm -rf /var/lib/apt/lists/*
 
   WORKDIR /app
 
