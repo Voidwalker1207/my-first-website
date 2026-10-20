@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y\
   g++ cmake make git libasio-dev\
   && rm-rf /var/lib/apt/lists/*
 
-  WORKDIR/app
+  WORKDIR /app
 
 COPY CMkeLists.txt main.cpp./
 
