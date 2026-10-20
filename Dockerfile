@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y\
 COPY . .
 
  RUN cmake -S . -B build -DCMAKE_BUILD_TYPE=Release\
-    && cmake--build build-j2
+    && cmake --build build -j2
 
 FROM ubuntu:latest
 
