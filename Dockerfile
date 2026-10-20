@@ -15,7 +15,7 @@ FROM ubuntu:8080
 
 EXPOSE 8080
 
-CMD["/usr/local/bin/cpp_web_app"]
+CMD ["/usr/local/bin/cpp_web_app"]
 
 
    
