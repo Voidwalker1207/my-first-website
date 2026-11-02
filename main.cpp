@@ -1,7 +1,4 @@
 #include "crow.h"
-#include <cstdlib>
-#include <vector>
-#include <string>
 
 // Structure representing a Kenyan liquor item
 struct InventoryItem {
